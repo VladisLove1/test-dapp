@@ -12,7 +12,7 @@ var current = 4;
 var denominatorsCount = 0;
 
 function calculatePrimes() {
-    while(primesList.length < 100) {
+    while(primesList.length < 10) {
         if(isPrime(current, primesList)) {
             for(let i = 2; i < current; i++) {
                 if(current % i === 0) {
@@ -27,4 +27,4 @@ function calculatePrimes() {
     return primesList;
 }
 console.log(calculatePrimes());
-//console.log(primesList.length);
+console.log(primesList.length);
